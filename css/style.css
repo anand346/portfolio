@@ -31,7 +31,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #777777;
-  background: url(../img/body-bg.png) no-repeat center; }
+  }
 
 h1,
 h2,
@@ -344,13 +344,14 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  background: url(../img/banner/home-banner.png) no-repeat top center;
   background-position: center;
   background-size: cover; }
   .home_banner_area .banner_inner {
     width: 100%; }
     .home_banner_area .banner_inner .home_right_img {
       padding-top: 197px; }
+    .home_banner_area .banner_inner .home_right_img img{
+      width: 100%; height: auto; }
       @media (max-width: 1480px) {
         .home_banner_area .banner_inner .home_right_img img {
           max-width: 100%;
@@ -2443,7 +2444,10 @@ h6 {
     margin-top: 20px; }
   .about_area .about_img {
     position: relative;
-    right: 250px; }
+    }
+  .about_area .about_img img{
+    width: 100%;
+    height: auto;}
     @media (max-width: 1480px) {
       .about_area .about_img {
         right: 0; }
@@ -3010,7 +3014,7 @@ h6 {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
     background-image: none !important;
-    background-color: #fcf8ff; }
+    }
 
   /* Blog page Area css
   ============================================================================================ */
@@ -3256,7 +3260,7 @@ h6 {
 .footer_area {
   padding: 120px 0;
   position: relative; }
-  .footer_area:before {
+  /* .footer_area:before {
     content: '';
     position: absolute;
     top: -200px;
@@ -3264,7 +3268,7 @@ h6 {
     right: 0px;
     bottom: 0px;
     background: #f9f9fd;
-    z-index: -1; }
+    z-index: -1; } */
   @media (max-width: 1024px) {
     .footer_area {
       padding: 60px 0; } }
